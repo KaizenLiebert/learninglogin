@@ -21,32 +21,31 @@
 </head>
 
 <body>
-    <?php
-    if (isset($_GET['error'])) {
-        echo '<p class="error">Error Logging In!</p>';
-    }
-    ?>
-    <div class="container">
-        <div class="card">
-            <a class="singup">Sign Up</a>
-            <div class="inputBox1">
-                <input type="text" required="required">
-                <span class="user">Email</span>
+    <!-- <?php
+            if (isset($_GET['error'])) {
+                echo '<p class="error">Error Logging In!</p>';
+            }
+            ?> -->
+    <div class="login-box">
+        <p>Login</p>
+        <form>
+            <div class="user-box">
+                <input required="" name="" type="text">
+                <label>Email</label>
             </div>
-
-            <div class="inputBox">
-                <input type="text" required="required">
-                <span>Username</span>
+            <div class="user-box">
+                <input required="" name="" type="password">
+                <label>Password</label>
             </div>
-
-            <div class="inputBox">
-                <input type="password" required="required">
-                <span>Password</span>
-            </div>
-
-            <button class="enter">Enter</button>
-
-        </div>
+            <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Submit
+            </a>
+        </form>
+        <p>Don't have an account? <a href="register.php" class="a2">Sign up!</a></p>
     </div>
 </body>
 
