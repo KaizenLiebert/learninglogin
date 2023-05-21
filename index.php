@@ -21,31 +21,27 @@
 </head>
 
 <body>
-    <!-- <?php
-            if (isset($_GET['error'])) {
-                echo '<p class="error">Error Logging In!</p>';
-            }
-            ?> -->
-    <div class="login-box">
-        <p>Login</p>
-        <form>
-            <div class="user-box">
-                <input required="" name="" type="text">
-                <label>Email</label>
-            </div>
-            <div class="user-box">
-                <input required="" name="" type="password">
-                <label>Password</label>
-            </div>
-            <a href="#">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Submit
-            </a>
-        </form>
-        <p>Don't have an account? <a href="register.php" class="a2">Sign up!</a></p>
+    <?php
+    if (isset($_GET['error'])) {
+        echo '<p class="error">Error Logging In!</p>';
+    }
+    ?>
+    <div class="container">
+        <div class="login-box">
+            <p>Login</p>
+            <form>
+                <div class="user-box">
+                    <input name="email" type="text">
+                    <label>Email</label>
+                </div>
+                <div class="user-box">
+                    <input type="password" name="password" id="password" />
+                    <label>Password</label>
+                </div>
+                <input id="a" type="button" value="Login" onclick="formhash(this.form, this.form.password);" />
+            </form>
+            <p>Don't have an account? <a href="register.php" class="a2">Sign up!</a></p>
+        </div>
     </div>
 </body>
 
